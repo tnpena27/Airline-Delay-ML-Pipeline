@@ -2,7 +2,7 @@
 
 A reproducible machine-learning workflow for predicting departure delays for flights leaving **John F. Kennedy International Airport (JFK)**. The project uses Python and scikit-learn for data preparation and Ridge regression, **MLflow** for experiment tracking, and **DVC** for data version control.
 
-This project was completed for **D602 – Deployment** in the M.S. Data Analytics (Data Engineering) program at Western Governors University.
+This project was completed for D602 – Deployment in the M.S. Data Analytics - Data Engineering program at Western Governors University.
 
 ## Project Overview
 
@@ -33,8 +33,6 @@ The workflow turns raw flight records into a model-ready dataset and evaluates a
 
 The import stage processed **539,747 flight records**. After filtering to JFK departures and removing incomplete or invalid records, **8,164 records** remained for the modeling workflow.
 
-The raw and generated CSV datasets are not included in this public repository. See [`data/README.md`](data/README.md) for the expected data locations and pipeline outputs.
-
 ## Model
 
 The modeling script uses Ridge regression with destination-airport one-hot encoding and scheduled departure/arrival time features. The first three weeks of the month's data are used for model development, while later-month records are held out for testing.
@@ -56,15 +54,11 @@ MLflow records the Ridge penalty values, training metrics, final test metrics, a
 
 The project defines MLflow entry points in `MLproject`. After placing the source dataset at `data/raw/flight_data.csv` and creating the project environment, the complete workflow can be launched with:
 
-```bash
-mlflow run .
-```
+**mlflow run .**
 
 The pipeline can also be executed directly:
 
-```bash
-python main.py
-```
+**python main.py**
 
 The individual stages are available through the MLflow project entry points for importing data, cleaning data, and training the model.
 

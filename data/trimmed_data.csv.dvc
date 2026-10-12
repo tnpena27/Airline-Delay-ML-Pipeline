@@ -1,0 +1,5 @@
+outs:
+- md5: 1fdd008c0010e5b7dfafa2cb40023c90
+  size: 28856883
+  hash: md5
+  path: trimmed_data.csv

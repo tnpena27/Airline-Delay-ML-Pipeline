@@ -1,0 +1,15 @@
+name: airport_delay_pipeline
+
+entry_points:
+
+  main:
+    command: "python main.py"
+
+  import_data:
+    command: "python src/import_data_v2.py"
+
+  clean_data:
+    command: "python src/clean_data_v2.py"
+
+  train_model:
+    command: "python poly_regressor_Python_1.0.0.py"

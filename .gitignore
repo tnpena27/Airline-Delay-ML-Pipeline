@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow / generated artifacts
+mlruns/
+*.log
+polynomial_regression.txt
+finalized_model.pkl
+cleaned_data.csv
+
+# Raw/intermediate datasets
+data/raw/
+data/imported/*.csv
+
+# DVC local cache/config
+.dvc/cache/
+.dvc/tmp/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

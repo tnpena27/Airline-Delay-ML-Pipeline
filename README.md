@@ -2,7 +2,7 @@
 
 A reproducible machine-learning workflow for predicting departure delays for flights leaving **John F. Kennedy International Airport (JFK)**. The project uses Python and scikit-learn for data preparation and Ridge regression, **MLflow** for experiment tracking, and **DVC** for data version control.
 
-This project was completed for D602 – Deployment in the M.S. Data Analytics - Data Engineering program at Western Governors University.
+This project was completed for the M.S. Data Analytics - Data Engineering program at Western Governors University.
 
 ## Project Overview
 
